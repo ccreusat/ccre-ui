@@ -1,0 +1,36 @@
+{
+  "name": "@knightkiddo-ui/icons",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && npm run svgr && vite build",
+    "preview": "vite preview",
+    "svgr": "svgr --icon --replace-attr-values '#4A4A4A=currentColor' --jsx-runtime automatic --title-prop --typescript --out-dir src src/icons"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^6.3.1",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ode-ui-icons.umd.cjs",
+  "module": "./dist/ode-ui-icons.js",
+  "types": "./dist/ode-ui-icons.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ode-ui-icons.js",
+      "require": "./dist/ode-ui-icons.umd.cjs"
+    }
+  }
+}

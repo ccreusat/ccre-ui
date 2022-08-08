@@ -1,0 +1,15 @@
+{
+  "name": "@ccre/ui",
+  "version": "1.0.0",
+  "description": "ccre ui react repository",
+  "workspaces": [
+    "packages/hooks",
+    "packages/icons",
+    "packages/lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "ccre",
+  "license": "ISC"
+}
