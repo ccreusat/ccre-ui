@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "./src/main.tsx"),
-      name: "@knightkiddo-ui/hooks",
+      name: "@ccre-ui/hooks",
       // the proper extensions will be added
-      fileName: "knightkiddo-ui-hooks",
+      fileName: "ccre-ui-hooks",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
