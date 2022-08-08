@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true /* Create sourcemaps for d.ts files. */,
+    "emitDeclarationOnly": true /* Allow 'import x from y' when a module doesn't have a default export. */,
+    "esModuleInterop": true /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "module": "ESNext" /* Specify the root folder within your source files. */,
+    "moduleResolution": "node",
+    "outDir": "dist/types",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ESNext" /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+  },
+  "include": ["src"]
+}

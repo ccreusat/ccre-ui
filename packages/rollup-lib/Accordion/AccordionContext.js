@@ -1,0 +1,1 @@
+import{createContext as o,useContext as n}from"react";const r=o(null);function t(){const o=n(r);if(!o)throw new Error("Accordion Compound Components cannot be rendered outside the Accordion component");return o}export{r as AccordionContext,t as useAccordionContext};

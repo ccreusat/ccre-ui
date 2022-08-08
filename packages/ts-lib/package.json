@@ -1,0 +1,37 @@
+{
+  "name": "@ccreusat/ts-lib",
+  "version": "0.1.0",
+  "description": "",
+  "main": "cjs/index.js",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@types/react": "^18.0.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --outdir .",
+    "build:cjs": "tsc --module commonjs --outdir cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/ccre-ui.git",
+    "directory": "packages/ts-lib"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccreusat/ccre-ui/issues"
+  },
+  "homepage": "https://github.com/ccreusat/ccre-ui#readme"
+}

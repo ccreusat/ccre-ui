@@ -1,0 +1,51 @@
+{
+  "name": "@ccreusat/icons",
+  "version": "0.1.1",
+  "description": "@ccreusat react icons library",
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo 'all package-b tests passed!'",
+    "dev": "vite",
+    "build": "tsc && npm run svgr && vite build",
+    "preview": "vite preview",
+    "svgr": "svgr --icon --replace-attr-values '#4A4A4A=currentColor' --jsx-runtime automatic --title-prop --typescript --out-dir src/icons src/assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/ccre-ui.git"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^6.3.1",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  },
+  "keywords": [
+    "react",
+    "frontend",
+    "components",
+    "icons"
+  ],
+  "bugs": {
+    "url": "https://github.com/ccreusat/ccre-ui/issues"
+  },
+  "homepage": "https://github.com/ccreusat/ccre-ui#readme"
+}
