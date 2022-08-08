@@ -1,0 +1,56 @@
+{
+  "name": "@ccreusat/parcel-lib",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "targets": {
+    "main": {
+      "isLibrary": true
+    },
+    "module": {
+      "isLibrary": true
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "concurrently": "^7.3.0",
+    "parcel": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "build:all": "concurrently \"npm run prebuild\" \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/ccre-ui.git"
+  },
+  "keywords": [
+    "react",
+    "parcel",
+    "components"
+  ],
+  "author": "Clement Creusat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccreusat/ccre-ui/issues"
+  },
+  "homepage": "https://github.com/ccreusat/ccre-ui#readme"
+}

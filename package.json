@@ -1,0 +1,71 @@
+{
+  "name": "root",
+  "version": "0.0.0",
+  "private": true,
+  "description": "@ccreusat react monorepo",
+  "scripts": {
+    "clean": "rm -rf node_modules && rm -rf package-lock.json",
+    "build:vite-lib": "npm run build -w=@ccreusat/vite-lib",
+    "build:rollup-lib": "npm run build -w=@ccreusat/rollup-lib",
+    "build:icons": "npm run build -w=@ccreusat/icons",
+    "build:babel-lib": "npm run build -w=@ccreusat/babel-lib",
+    "build:parcel-lib": "npm run build:all -w=@ccreusat/parcel-lib",
+    "build:ts-lib": "npm run build -w=@ccreusat/ts-lib",
+    "build:ts-lib2": "npm run build -w=@ccreusat/ts-lib-2",
+    "minor:components": "cd packages/rollup-lib && npm version minor",
+    "minor:rollup-lib": "cd packages/rollup-lib && npm version minor",
+    "minor:ts-lib": "cd packages/ts-lib && npm version minor",
+    "storybook": "cd docs/storybook && start-storybook -p 6006",
+    "semantic-release": "semantic-release",
+    "publish:workspaces": "npm publish --workspaces --access public",
+    "publish:components": "npm publish --workspace=@ccreusat/vite-lib",
+    "publish:rollup-lib": "npm publish --workspace=@ccreusat/rollup-lib",
+    "publish:parcel-lib": "npm publish --workspace=@ccreusat/parcel-lib",
+    "publish:ts-lib2": "npm publish --workspace=@ccreusat/ts-lib-2",
+    "publish:ts-lib": "npm publish --workspace=@ccreusat/ts-lib",
+    "prepub": "cd packages/vite-lib && cp package.json dist",
+    "pub": "cd packages/vite-lib/dist && npm pack",
+    "#postpub": "cd packages/vite-lib && cd dist & del package.json",
+    "prepublishOnly": "cd packages/vite-lib && npm run build && cp -r ./dist/* . && rm -rf ./dist"
+  },
+  "workspaces": [
+    "packages/*",
+    "docs/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccreusat/ccre-ui.git"
+  },
+  "keywords": [
+    "react",
+    "frontend",
+    "storybook",
+    "components",
+    "ui",
+    "vite"
+  ],
+  "author": "Clement Creusat",
+  "bugs": {
+    "url": "https://github.com/ccreusat/ccre-ui/issues"
+  },
+  "homepage": "https://github.com/ccreusat/ccre-ui#readme",
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.7.0",
+    "@parcel/transformer-typescript-types": "^2.7.0",
+    "multi-semantic-release": "^2.13.0",
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5",
+    "typescript": "^4.7.4"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer"
+    ],
+    "branches": [
+      "master",
+      "feature",
+      "next"
+    ],
+    "noCi": true
+  }
+}

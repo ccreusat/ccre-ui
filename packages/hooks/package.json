@@ -1,0 +1,24 @@
+{
+  "name": "@ccreusat/hooks",
+  "version": "0.1.0",
+  "description": "@ccreusat hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/ccre-ui.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "frontend"
+  ],
+  "author": "Clement Creusat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccreusat/ccre-ui/issues"
+  },
+  "homepage": "https://github.com/ccreusat/ccre-ui#readme"
+}

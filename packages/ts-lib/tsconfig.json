@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "sourceMap": false,
+    "strict": true,
+    "target": "ESNext",
+    "paths": {
+      "@ccreusat/ts-lib": ["./src"],
+      "@ccreusat/ts-lib/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
