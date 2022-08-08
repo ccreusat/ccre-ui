@@ -1,5 +1,5 @@
 {
-  "name": "@ccre-ui/lib",
+  "name": "@ccre/lib",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -11,8 +11,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@ccre-ui/hooks": "*",
-    "@ccre-ui/icons": "*",
+    "@ccre/hooks": "*",
+    "@ccre/icons": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -34,6 +34,7 @@
     "vite-plugin-dts": "^1.4.1"
   },
   "publishConfig": {
+    "registry":"https://npm.pkg.github.com",
     "access": "public"
   },
   "files": [

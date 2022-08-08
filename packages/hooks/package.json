@@ -1,5 +1,5 @@
 {
-  "name": "@ccre-ui/hooks",
+  "name": "@ccre/hooks",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -23,6 +23,7 @@
     "dist"
   ],
   "publishConfig": {
+    "registry":"https://npm.pkg.github.com",
     "access": "public"
   },
   "main": "./dist/ode-ui-hooks.umd.cjs",

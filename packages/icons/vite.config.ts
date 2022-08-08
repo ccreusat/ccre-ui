@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "./src/index.ts"),
-      name: "@ccre-ui/icons",
+      name: "@ccre/icons",
       // the proper extensions will be added
-      fileName: "ccre-ui-icons",
+      fileName: "ccre-icons",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

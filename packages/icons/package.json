@@ -1,5 +1,5 @@
 {
-  "name": "@ccre-ui/icons",
+  "name": "@ccre/icons",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -22,6 +22,7 @@
     "vite": "^3.0.0"
   },
   "publishConfig": {
+    "registry":"https://npm.pkg.github.com",
     "access": "public"
   },
   "files": [
