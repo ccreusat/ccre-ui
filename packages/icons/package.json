@@ -1,13 +1,16 @@
 {
-  "name": "@ccre/icons",
-  "private": true,
-  "version": "0.0.1",
+  "name": "@ccreusat/icons",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && npm run svgr && vite build",
     "preview": "vite preview",
     "svgr": "svgr --icon --replace-attr-values '#4A4A4A=currentColor' --jsx-runtime automatic --title-prop --typescript --out-dir src src/icons"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/ccre-ui.git"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,23 +21,24 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
+    "clsx": "^1.2.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com",
-    "access": "public"
   },
   "files": [
     "dist"
   ],
-  "main": "./dist/ode-ui-icons.umd.cjs",
-  "module": "./dist/ode-ui-icons.js",
-  "types": "./dist/ode-ui-icons.d.ts",
+  "main": "./dist/ccre-ui-icons.umd.cjs",
+  "module": "./dist/ccre-ui-icons.js",
+  "types": "./dist/ccre-ui-icons.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/ode-ui-icons.js",
-      "require": "./dist/ode-ui-icons.umd.cjs"
+      "import": "./dist/ccre-ui-icons.js",
+      "require": "./dist/ccre-ui-icons.umd.cjs"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ccreusat/ccre-ui/issues"
+  },
+  "homepage": "https://github.com/ccreusat/ccre-ui#readme"
 }

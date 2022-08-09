@@ -1,7 +1,6 @@
 {
-  "name": "@ccre/lib",
-  "private": true,
-  "version": "0.0.1",
+  "name": "@ccreusat/lib",
+  "version": "1.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,9 +9,13 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/ccre-ui.git"
+  },
   "dependencies": {
-    "@ccre/hooks": "*",
-    "@ccre/icons": "*",
+    "@ccreusat/hooks": "*",
+    "@ccreusat/icons": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -33,20 +36,20 @@
     "vite": "^3.0.0",
     "vite-plugin-dts": "^1.4.1"
   },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com",
-    "access": "public"
-  },
   "files": [
     "dist"
   ],
-  "main": "./dist/ode-ui-lib.umd.cjs",
-  "module": "./dist/ode-ui-lib.js",
-  "types": "./dist/ode-ui-lib.d.ts",
+  "main": "./dist/ccre-ui-lib.umd.cjs",
+  "module": "./dist/ccre-ui-lib.js",
+  "types": "./dist/ccre-ui-lib.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/ode-ui-lib.js",
-      "require": "./dist/ode-ui-lib.umd.cjs"
+      "import": "./dist/ccre-ui-lib.js",
+      "require": "./dist/ccre-ui-lib.umd.cjs"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ccreusat/ccre-ui/issues"
+  },
+  "homepage": "https://github.com/ccreusat/ccre-ui#readme"
 }

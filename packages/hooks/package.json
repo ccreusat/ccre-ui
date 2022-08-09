@@ -1,12 +1,15 @@
 {
-  "name": "@ccre/hooks",
-  "private": true,
-  "version": "0.0.1",
+  "name": "@ccreusat/hooks",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/ccre-ui.git"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,17 +25,13 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com",
-    "access": "public"
-  },
-  "main": "./dist/ode-ui-hooks.umd.cjs",
-  "module": "./dist/ode-ui-hooks.js",
-  "types": "./dist/ode-ui-hooks.d.ts",
+  "main": "./dist/ccre-ui-hooks.umd.cjs",
+  "module": "./dist/ccre-ui-hooks.js",
+  "types": "./dist/ccre-ui-hooks.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/ode-ui-hooks.js",
-      "require": "./dist/ode-ui-hooks.umd.cjs"
+      "import": "./dist/ccre-ui-hooks.js",
+      "require": "./dist/ccre-ui-hooks.umd.cjs"
     }
   }
 }
