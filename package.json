@@ -1,6 +1,5 @@
 {
   "name": "@ccreusat/ui",
-  "private": true,
   "version": "1.0.1",
   "description": "ccre ui react repository",
   "workspaces": [
@@ -15,7 +14,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "@ccreusat:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@ccreusat"
   },
   "author": "ccre",
   "license": "ISC"
