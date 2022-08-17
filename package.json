@@ -14,7 +14,8 @@
     "url": "git+https://github.com/ccreusat/ccre-ui.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@ccreusat:registry": "https://npm.pkg.github.com"
   },
   "author": "ccre",
   "license": "ISC"
