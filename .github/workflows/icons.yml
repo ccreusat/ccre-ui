@@ -1,4 +1,4 @@
-name: NPM Packages
+name: NPM Icon Packages
 
 on:
   push:
