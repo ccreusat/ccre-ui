@@ -1,6 +1,6 @@
 {
   "name": "@ccreusat/ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ccre ui react repository",
   "workspaces": [
     "packages/hooks",
