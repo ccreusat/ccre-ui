@@ -1,4 +1,4 @@
-name: Node.js Package
+name: NPM Packages
 
 on:
   release:
@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 16
       - run: npm ci
       - run: npm test
 
@@ -25,9 +25,11 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm version patch
       - run: npm publish
+      - run: npm publish --workspaces --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_GITHUB_TOKEN}}

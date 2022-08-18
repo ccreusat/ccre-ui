@@ -1,6 +1,6 @@
 {
-  "name": "@ccreusat/hooks",
-  "version": "1.0.5",
+  "name": "@ccreusat/react-hooks",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

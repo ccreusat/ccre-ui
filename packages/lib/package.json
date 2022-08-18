@@ -1,6 +1,6 @@
 {
-  "name": "@ccreusat/lib",
-  "version": "1.0.5",
+  "name": "@ccreusat/react-lib",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,8 +14,8 @@
     "url": "git+https://github.com/ccreusat/ccre-ui.git"
   },
   "dependencies": {
-    "@ccreusat/hooks": "*",
-    "@ccreusat/icons": "*",
+    "@ccreusat/react-hooks": "*",
+    "@ccreusat/react-icons": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -25,13 +25,17 @@
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
     "@storybook/addon-links": "^6.5.10",
+    "@storybook/addons": "^6.5.10",
     "@storybook/builder-vite": "^0.2.2",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
+    "@storybook/theming": "^6.5.10",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
     "babel-loader": "^8.2.5",
+    "ode-bootstrap": "file:ode-bootstrap-1.0.0-produit.202207211514.tgz",
+    "sass": "^1.54.4",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
     "vite-plugin-dts": "^1.4.1"

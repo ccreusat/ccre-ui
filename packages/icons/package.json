@@ -1,6 +1,6 @@
 {
-  "name": "@ccreusat/icons",
-  "version": "1.0.6",
+  "name": "@ccreusat/react-icons",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,8 +13,7 @@
     "url": "git+https://github.com/ccreusat/ccre-ui.git"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/@ccreusat"
+    "access": "public"
   },
   "dependencies": {
     "react": "^18.2.0",

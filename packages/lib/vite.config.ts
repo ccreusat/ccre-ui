@@ -24,6 +24,15 @@ export default defineConfig({
       },
     },
   },
+  resolve: {
+    alias: [
+      { find: "~", replacement: resolve(__dirname, "src") },
+      {
+        find: "utils",
+        replacement: resolve(__dirname, "./src/utils"),
+      },
+    ],
+  },
   plugins: [
     react(),
     dts({
