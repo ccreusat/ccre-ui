@@ -1,8 +1,22 @@
 {
-  "name": "@ccreusat/react-icons",
-  "version": "0.2.0",
+  "name": "@ccreusat/icons",
+  "version": "0.1.0",
+  "description": "@ccreusat react icons library",
   "type": "module",
+  "main": "dist/main.umd.cjs",
+  "module": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "test": "echo 'all package-b tests passed!'",
     "dev": "vite",
     "build": "tsc && npm run svgr && vite build",
     "preview": "vite preview",
@@ -12,10 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/ccreusat/ccre-ui.git"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -24,22 +35,15 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
-    "clsx": "^1.2.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
   },
-  "files": [
-    "dist"
+  "keywords": [
+    "react",
+    "frontend",
+    "components",
+    "icons"
   ],
-  "main": "./dist/ccre-ui-icons.umd.cjs",
-  "module": "./dist/ccre-ui-icons.js",
-  "types": "./dist/ccre-ui-icons.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/ccre-ui-icons.js",
-      "require": "./dist/ccre-ui-icons.umd.cjs"
-    }
-  },
   "bugs": {
     "url": "https://github.com/ccreusat/ccre-ui/issues"
   },

@@ -1,10 +1,10 @@
-# @ccreusat/react-ui
+# @creusat react components
 
-All accessible, unstyled fully functional components from @ccreusat/react-ui
+All accessible React components
 
 ## Installation
 
-`npm i @ccreusat/react-ui`
+`npm i @ccreusat/ode-react-components`
 
 ## Documentation
 

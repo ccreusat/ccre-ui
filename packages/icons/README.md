@@ -1,10 +1,10 @@
-# @ccreusat/react-hooks
+# @ccreusat react icons
 
-All icons React-ready made with React SVGR from @ccreusat-icons
+All icons React-ready made with React SVGR
 
 ## Installation
 
-`npm i @ccreusat/react-icons`
+`npm i @ccreusat/icons`
 
 ## Documentation
 

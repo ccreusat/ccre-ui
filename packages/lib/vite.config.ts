@@ -6,10 +6,10 @@ import { resolve } from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "./src/main.tsx"),
-      name: "@ccre-ui/lib",
+      entry: resolve(__dirname, "./src/index.ts"),
+      name: "@ccreusat/ui",
       // the proper extensions will be added
-      fileName: "ccre-ui-lib",
+      fileName: "main",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -30,6 +30,18 @@ export default defineConfig({
       {
         find: "utils",
         replacement: resolve(__dirname, "./src/utils"),
+      },
+      {
+        find: "models",
+        replacement: resolve(__dirname, "./src/models"),
+      },
+      {
+        find: "components",
+        replacement: resolve(__dirname, "./src/components"),
+      },
+      {
+        find: "hooks",
+        replacement: resolve(__dirname, "./src/hooks"),
       },
     ],
   },

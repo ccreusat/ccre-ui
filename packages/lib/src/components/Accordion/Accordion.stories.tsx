@@ -1,8 +1,7 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Accordion from "./Accordion";
+import Accordion from ".";
 import "../../index.css";
-// import "ode-bootstrap/scss/index.scss";
 
 export default {
   title: "Components/Accordion",
@@ -33,7 +32,7 @@ const data = [
 export const BasicAccordion = () => (
   <Accordion as="div" style={{ minWidth: "20rem" }}>
     <Accordion.Item itemKey="1">
-      <Accordion.Trigger>Trigger</Accordion.Trigger>
+      <Accordion.Header>Trigger</Accordion.Header>
       <Accordion.Body>
         <strong>Text</strong>
       </Accordion.Body>
@@ -45,7 +44,7 @@ export const ClosedAccordion = () => (
     {data.map(item => {
       return (
         <Accordion.Item key={item.id} itemKey={item.id}>
-          <Accordion.Trigger>{item.title}</Accordion.Trigger>
+          <Accordion.Header>{item.title}</Accordion.Header>
           <Accordion.Body>
             <strong>{item.text}</strong>
           </Accordion.Body>
@@ -60,7 +59,7 @@ export const OpenedAccordion = () => (
     {data.map(item => {
       return (
         <Accordion.Item key={item.id} itemKey={item.id}>
-          <Accordion.Trigger>{item.title}</Accordion.Trigger>
+          <Accordion.Header>{item.title}</Accordion.Header>
           <Accordion.Body>
             <strong>{item.text}</strong>
           </Accordion.Body>
@@ -75,7 +74,7 @@ export const PolymorphicAccordion = () => (
     {data.map(item => {
       return (
         <Accordion.Item key={item.id} itemKey={item.id}>
-          <Accordion.Trigger>{item.title}</Accordion.Trigger>
+          <Accordion.Header>{item.title}</Accordion.Header>
           <Accordion.Body>
             <strong>{item.text}</strong>
           </Accordion.Body>
