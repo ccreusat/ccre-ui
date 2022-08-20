@@ -4,7 +4,7 @@ All accessible React components
 
 ## Installation
 
-`npm i @ccreusat/ode-react-components`
+`npm i @ccreusat/ui`
 
 ## Documentation
 
