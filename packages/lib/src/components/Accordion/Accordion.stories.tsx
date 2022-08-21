@@ -70,7 +70,7 @@ export const OpenedAccordion = () => (
 );
 
 export const PolymorphicAccordion = () => (
-  <Accordion defaultKey="2" as="section" style={{ minWidth: "20rem" }}>
+  <Accordion defaultKey="2" as="div" style={{ minWidth: "20rem" }}>
     {data.map(item => {
       return (
         <Accordion.Item key={item.id} itemKey={item.id}>
