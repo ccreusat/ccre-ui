@@ -30,7 +30,8 @@
   },
   "homepage": "https://github.com/ccreusat/ccre-ui#readme",
   "devDependencies": {
-    "semantic-release": "^19.0.3"
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5"
   },
   "release": {
     "branches": [
