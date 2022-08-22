@@ -34,6 +34,14 @@
     "semantic-release-monorepo": "^7.0.5"
   },
   "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ],
+    "extends": "semantic-release-monorepo",
     "branches": [
       "master",
       "feature",
