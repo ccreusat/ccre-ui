@@ -12,6 +12,7 @@ export default function AccordionBody({
   const { itemKey } = useAccordionItemContext();
   return (
     <div
+      {...props}
       className={`accordion-collapse collapse ${
         selected === itemKey ? "show" : null
       }`}
