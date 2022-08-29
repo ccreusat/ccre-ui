@@ -35,6 +35,7 @@ export default [
     input: ["./src/index.ts"],
     output: [
       {
+        // file: pkg.main,
         dir: ".",
         format: "esm",
         sourcemap: false,
