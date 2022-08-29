@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "waou",
+  "packageName": "@ccreusat/rollup-lib",
+  "email": "clement.creusat@gmail.com",
+  "dependentChangeType": "patch"
+}
