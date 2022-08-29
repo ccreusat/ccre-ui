@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "patch",
+  "packageName": "@ccreusat/rollup-lib",
+  "email": "clement.creusat@gmail.com",
+  "dependentChangeType": "patch"
+}
