@@ -1,6 +1,6 @@
 {
   "name": "@ccreusat/storybook",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "@@creusat frontend documentation",
   "main": "./dist/main.umd.cjs",
   "module": "./dist/main.js",

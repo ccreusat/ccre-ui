@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "patch",
-  "packageName": "@ccreusat/storybook",
-  "email": "clement.creusat@gmail.com",
-  "dependentChangeType": "patch"
-}
