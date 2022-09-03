@@ -25,3 +25,6 @@ dist-ssr
 
 .env
 .parcel-cache
+
+.turbo
+dist/**
